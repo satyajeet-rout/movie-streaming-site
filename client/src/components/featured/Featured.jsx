@@ -10,7 +10,7 @@
 //     useEffect(() => {
 //         const getRandomContent = async() => {
 //             try {
-//                 const res = await axios.get(`http://localhost:8800/api/movies/random?type=${type}`, {
+//                 const res = await axios.get(`https://movie-streaming-site-backend.onrender.com/api/movies/random?type=${type}`, {
 //              headers: {
 //             token:
 //               "Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,
@@ -88,7 +88,7 @@ export default function Featured({ type, setGenre }) {
   useEffect(() => {
     const getRandomContent = async () => {
       try {
-        const res = await axios.get(`http://localhost:8800/api/movies/random?type=${type}`, {
+        const res = await axios.get(`https://movie-streaming-site-backend.onrender.com/api/movies/random?type=${type}`, {
           headers: {
             token:
               "Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,

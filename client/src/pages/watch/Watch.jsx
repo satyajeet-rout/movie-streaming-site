@@ -17,7 +17,7 @@ function Watch() {
     useEffect(() => {
     const getMovie = async () => {
       try {
-        const res = await axios.get(`http://localhost:8800/api/movies/find/${id}`,  {
+        const res = await axios.get(`https://movie-streaming-site-backend.onrender.com/api/movies/find/${id}`,  {
            headers: {
             token:
             "Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,

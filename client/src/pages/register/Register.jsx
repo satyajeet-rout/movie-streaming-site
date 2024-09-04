@@ -74,7 +74,7 @@
 //     setPassword(passwordRef.current.value);
 //     setUsername(usernameRef.current.value);
 //     try {
-//       await axios.post("http://localhost:8800/api/auth/register", { email, username, password });
+//       await axios.post("https://movie-streaming-site-backend.onrender.com/api/auth/register", { email, username, password });
 //       navigate("/login");
 //     } catch (err) {
 //       console.error(err);
@@ -153,7 +153,7 @@ export default function Register() {
     setPassword(passwordRef.current.value);
     setUsername(usernameRef.current.value);
     try {
-      await axios.post("http://localhost:8800/api/auth/register", { email, username, password });
+      await axios.post("https://movie-streaming-site-backend.onrender.com/api/auth/register", { email, username, password });
       navigate("/login");
     } catch (err) {
       console.error(err);

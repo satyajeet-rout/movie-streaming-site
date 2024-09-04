@@ -187,7 +187,7 @@ const Admin = () => {
     formData.append('isSeries', isSeries);
 
     try {
-      await axios.post(`http://localhost:8800/api/movies/`, formData, {
+      await axios.post(`https://movie-streaming-site-backend.onrender.com/api/movies/`, formData, {
         headers: {
             token:
             "Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,

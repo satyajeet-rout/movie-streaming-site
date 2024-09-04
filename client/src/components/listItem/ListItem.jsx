@@ -17,7 +17,7 @@
 //   useEffect(() => {
 //     const getMovie = async () => {
 //       try {
-//         const res = await axios.get(`http://localhost:8800/api/movies/find/${movieId}`,  {
+//         const res = await axios.get(`https://movie-streaming-site-backend.onrender.com/api/movies/find/${movieId}`,  {
 //             headers: {
 //             token:
 //             "Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,
@@ -96,7 +96,7 @@ export default function ListItem({ index, item }) {
   useEffect(() => {
     const getMovie = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/api/movies/find/" + item, {
+        const res = await axios.get("https://movie-streaming-site-backend.onrender.com/api/movies/find/" + item, {
           headers: {
             token:
             "Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,
