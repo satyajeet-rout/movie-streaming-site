@@ -1,0 +1,39 @@
+.watch {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    
+
+    .back {
+        display: flex;
+        align-items: center;
+        // position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        cursor: pointer;
+        z-index: 2;
+        // text-decoration: wheat;
+        text-decoration:underline;
+        
+    }
+    .title{
+        color: aliceblue;
+        margin: auto;
+        border: 1px solid red;
+        width: 300px;
+        display: flex;
+        font-size: larger;
+        justify-content: center;
+    }
+
+    .video {
+        background-color: black;
+        width: 80%;
+        height: 80%;
+        // object-fit: cover;
+      margin: auto;
+    }
+}
